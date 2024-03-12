@@ -1,5 +1,7 @@
 package character;
 
+import exception.InvalidCharacterException;
+
 public class Healer 
 	extends GameCharacter implements IHealer {
 	
@@ -16,7 +18,7 @@ public class Healer
 	public Healer(
 			String name, 
 			int lifePoint, 
-			int healPower) {
+			int healPower) throws InvalidCharacterException {
 		super(name, lifePoint);
 		this.healPower = healPower;
 	}

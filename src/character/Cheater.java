@@ -1,9 +1,11 @@
 package character;
 
+import exception.InvalidCharacterException;
+
 public class Cheater extends GameCharacter 
 		implements IFighter, IHealer {
 
-	public Cheater(String name) {
+	public Cheater(String name) throws InvalidCharacterException {
 		super(name, 10000);
 	}
 

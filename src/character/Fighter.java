@@ -1,5 +1,7 @@
 package character;
 
+import exception.InvalidCharacterException;
+
 public class Fighter 
 	extends GameCharacter implements IFighter {
 
@@ -16,7 +18,7 @@ public class Fighter
 	public Fighter(
 			String name,
 			int lifePoint,
-			int attackPower) {
+			int attackPower) throws InvalidCharacterException {
 		super(name, lifePoint);
 		this.attackPower = attackPower;
 	}

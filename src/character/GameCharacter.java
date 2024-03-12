@@ -1,5 +1,7 @@
 package character;
 
+import exception.InvalidCharacterException;
+
 public abstract class GameCharacter {
 	
 	protected static int MAX_LIFE = 1000;
@@ -15,8 +17,13 @@ public abstract class GameCharacter {
 	
 	public GameCharacter(
 			String name,
-			int life) {
+			int life) throws InvalidCharacterException {
 		this.name = name;
+		
+		if(life < 0) {
+			throw new InvalidCharacterException();
+		}
+		
 		this.life = life;
 	}
 	
