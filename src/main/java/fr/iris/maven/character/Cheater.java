@@ -1,6 +1,6 @@
-package character;
+package fr.iris.maven.character;
 
-import exception.InvalidCharacterException;
+import fr.iris.maven.exception.InvalidCharacterException;
 
 public class Cheater extends GameCharacter 
 		implements IFighter, IHealer {

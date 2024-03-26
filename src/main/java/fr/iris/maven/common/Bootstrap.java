@@ -1,12 +1,12 @@
-package common;
+package fr.iris.maven.common;
 
-import character.GameCharacter;
-import character.Cheater;
-import character.Healer;
-import character.Fighter;
-import character.IFighter;
-import character.IHealer;
-import exception.InvalidCharacterException;
+import fr.iris.maven.character.Cheater;
+import fr.iris.maven.character.Fighter;
+import fr.iris.maven.character.GameCharacter;
+import fr.iris.maven.character.Healer;
+import fr.iris.maven.character.IFighter;
+import fr.iris.maven.character.IHealer;
+import fr.iris.maven.exception.InvalidCharacterException;
 
 public class Bootstrap {
 	

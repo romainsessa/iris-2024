@@ -1,4 +1,4 @@
-package character;
+package fr.iris.maven.character;
 
 public interface IHealer {
 	

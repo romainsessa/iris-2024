@@ -1,4 +1,4 @@
-package exception;
+package fr.iris.maven.exception;
 
 public class InvalidCharacterException extends Exception {
 
